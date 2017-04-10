@@ -22,6 +22,7 @@ def softmax(x):
 
 
 def classify(file_name):
+    print "Predicting for " + file_name.split('/')[-1]
     cwd = os.path.dirname(__file__)
     params = np.load(os.path.join(cwd, 'ckpts', 'np_params.npy'))
     _, extension = os.path.splitext(file_name)
@@ -48,5 +49,4 @@ if __name__ == "__main__":
     cwd = os.path.dirname(__file__)
     if not os.path.exists(os.path.join(cwd, 'data')):
         os.makedirs(os.path.join(cwd, 'data'))
-    print cwd
     np.save(os.path.join(cwd, 'data', 'output.npy'), np.array(classify(sys.argv[1])))
