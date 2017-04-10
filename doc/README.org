@@ -10,14 +10,15 @@
 *** No GPU is required!
 ** Build:
 
-``` bash
+#+BEGIN_SRC bash
 sh build.sh
-```
-** Run
+#+END_SRC
 
-``` bash
+** Run
+#+BEGIN_SRC 
 sh run.sh [path to the data folder] [data file]
-```
+#+END_SRC
+
 ex: sh run.sh /home/deepinfer/image_data img1.jpg
 
 
