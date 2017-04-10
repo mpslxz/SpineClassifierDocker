@@ -1,0 +1,11 @@
+#+AUTHOR: Mehran Pesteie
+#+EMAIL: mehranp at ece (dot) ubc (dot) ca
+#+OPTIONS: toc:nil
+
+* Repository for Docker image of the spine classifier
+** Dependencies:
+*** Docker
+*** numpy
+*** opencv
+*** No GPU is required!
+
