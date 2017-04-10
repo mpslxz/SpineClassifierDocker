@@ -48,5 +48,5 @@ if __name__ == "__main__":
     cwd = os.path.dirname(__file__)
     if not os.path.exists(os.path.join(cwd, 'data')):
         os.makedirs(os.path.join(cwd, 'data'))
-    print sys.argv[1]
+    print cwd
     np.save(os.path.join(cwd, 'data', 'output.npy'), np.array(classify(sys.argv[1])))
