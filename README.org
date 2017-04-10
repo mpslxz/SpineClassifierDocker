@@ -4,10 +4,10 @@
 
 * Repository for Docker image of the spine classifier
 ** Dependencies:
-*** Docker
-*** numpy
-*** opencv
-*** No GPU is required!
+- docker
+- numpy
+- opencv
+- No GPU!
 ** Build:
 
 #+BEGIN_SRC bash
@@ -20,5 +20,3 @@ sh run.sh [path to the data folder] [data file]
 #+END_SRC
 
 ex: sh run.sh /home/deepinfer/image_data img1.jpg
-
-
