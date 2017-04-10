@@ -46,6 +46,7 @@ def classify(file_name):
 if __name__ == "__main__":
     assert os.path.exists(sys.argv[1])
     cwd = os.path.dirname(__file__)
-    if not os.path.exists(os.path.join(cwd, 'output')):
-        os.makedirs(os.path.join(cwd, 'output'))
-    np.save(os.path.join(cwd, 'output', 'output.npy'), np.array(classify(sys.argv[1])))
+    if not os.path.exists(os.path.join(cwd, 'data')):
+        os.makedirs(os.path.join(cwd, 'data'))
+    print sys.argv[1]
+    np.save(os.path.join(cwd, 'data', 'output.npy'), np.array(classify(sys.argv[1])))
