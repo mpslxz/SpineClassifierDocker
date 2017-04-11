@@ -9,7 +9,7 @@
 ** Data
 - Sagittal planes of 3D US volumes collected with motorized transducer from 13 volunteers
 ** Result summary:
-- 97% and 94% accuracy on train and test data, respectively. For more details, please refer to the [[http://link.springer.com/article/10.1007/s11548-015-1202-5][paper]].
+97% and 94% accuracy on train and test data, respectively. For more details, please refer to the [[http://link.springer.com/article/10.1007/s11548-015-1202-5][paper]].
 ** Dependencies:
 - docker
 - numpy
@@ -23,10 +23,12 @@ sh build.sh
 
 ** Run:
 #+BEGIN_SRC 
-sh run.sh [path to the data folder] [data file]
+sh run.sh [data folder] [data file]
 #+END_SRC
 
 ex: sh run.sh /home/deepinfer/image_data img1.jpg
+** Output:
+Numpy array of shape (1, 2) saved as output.npy in [data folder] in the format of [P of non-target, P of target].
 ** Citation:
 If you use this code and docker image, please cite:
 - Pesteie, M., Abolmaesumi, P., Ashab, H. A. D., Lessoway, V. A., Massey, S., Gunka, V., & Rohling, R. N. (2015). Real-time ultrasound image classification for spine anesthesia using local directional Hadamard features. International journal of computer assisted radiology and surgery, 10(6), 901-912.
