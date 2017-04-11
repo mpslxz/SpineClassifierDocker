@@ -9,7 +9,7 @@
 ** Data
 - Sagittal planes of 3D US volumes collected with motorized transducer from 13 volunteers
 ** Result summary:
-- 97% and 94% accuracy on train and test data, respectively.
+- 97% and 94% accuracy on train and test data, respectively. For more details, please refer to the [[http://link.springer.com/article/10.1007/s11548-015-1202-5][paper]].
 ** Dependencies:
 - docker
 - numpy
