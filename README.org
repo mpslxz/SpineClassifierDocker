@@ -27,8 +27,12 @@ sh run.sh [data folder] [data file]
 #+END_SRC
 
 ex: sh run.sh /home/deepinfer/image_data img1.jpg
+
+** Input:
+Single image with arbitrary size and .jpg .png .bmp formats OR numpy array. The numpy array can be 2D (I, J) (one image) or 3D (N, I, J) (multiple images) where N indicates the image index.
 ** Output:
 Numpy array of shape (1, 2) saved as output.npy in [data folder] in the format of [P of non-target, P of target].
+In the case of 3D input, the output is in the form of (N, 1, 2) where N is the number of images in the 3D volume.
 ** Citation:
 If you use this code and docker image, please cite:
 - Pesteie, M., Abolmaesumi, P., Ashab, H. A. D., Lessoway, V. A., Massey, S., Gunka, V., & Rohling, R. N. (2015). Real-time ultrasound image classification for spine anesthesia using local directional Hadamard features. International journal of computer assisted radiology and surgery, 10(6), 901-912.
