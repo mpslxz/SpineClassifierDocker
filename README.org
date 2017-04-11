@@ -2,7 +2,14 @@
 #+EMAIL: mehranp at ece (dot) ubc (dot) ca
 #+OPTIONS: toc:nil
 
-* Repository for Docker image of the spine classifier
+* Docker image of the US spine classification system.
+** Methods
+- Multi-scale and multi-directional feature extraction using LDH
+- Pattern classification via MLP
+** Data
+- Sagittal planes of 3D US volumes collected with motorized transducer from 13 volunteers
+** Result summary:
+- 97% and 94% accuracy on train and test data, respectively.
 ** Dependencies:
 - docker
 - numpy
@@ -14,9 +21,12 @@
 sh build.sh
 #+END_SRC
 
-** Run
+** Run:
 #+BEGIN_SRC 
 sh run.sh [path to the data folder] [data file]
 #+END_SRC
 
 ex: sh run.sh /home/deepinfer/image_data img1.jpg
+If you use this code and docker image, please cite Real-time ultrasound image classification for spine anesthesia using local directional Hadamard features[fn:1] and DeepInfer: open-source deep learning deployment toolkit for image-guided therapy[fn:2] papers.
+[fn:1]Pesteie, Mehran, et al. "Real-time ultrasound image classification for spine anesthesia using local directional Hadamard features." International journal of computer assisted radiology and surgery 10.6 (2015): 901-912.
+[fn:2]Mehrtash, Alireza, et al. "DeepInfer: open-source deep learning deployment toolkit for image-guided therapy." SPIE Medical Imaging. International Society for Optics and Photonics, 2017.
