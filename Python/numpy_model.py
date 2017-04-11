@@ -32,7 +32,7 @@ def classify(file_name):
         img = np.load(file_name)
     if img.ndim > 2:
         out = []
-        for i in len(img):
+        for i in range(len(img)):
             features = np.array(extractFeatures(normalize(img[i]))).reshape((1, -1))
             _y = np.dot(features, params[0]) + params[1]
             y = np.dot(sigmoid(_y), params[2]) + params[3]
