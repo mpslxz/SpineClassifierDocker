@@ -2,7 +2,7 @@
 #+EMAIL: mehranp at ece (dot) ubc (dot) ca
 #+OPTIONS: toc:nil
 
-* Docker image of the US spine classification system.
+* Docker image of the US spine classification system (Python implementation).
 ** Methods
 - Multi-scale and multi-directional feature extraction using LDH
 - Pattern classification via MLP
