@@ -29,5 +29,5 @@ sh run.sh [path to the data folder] [data file]
 ex: sh run.sh /home/deepinfer/image_data img1.jpg
 ** Citation:
 If you use this code and docker image, please cite:
-- [[http://link.springer.com/article/10.1007/s11548-015-1202-5][Real-time ultrasound image classification for spine anesthesia using local directional Hadamard features]]
-- [[http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid%3D2609162][DeepInfer: open-source deep learning deployment toolkit for image-guided therapy]]
+- Pesteie, M., Abolmaesumi, P., Ashab, H. A. D., Lessoway, V. A., Massey, S., Gunka, V., & Rohling, R. N. (2015). Real-time ultrasound image classification for spine anesthesia using local directional Hadamard features. International journal of computer assisted radiology and surgery, 10(6), 901-912.
+- Mehrtash, A., Pesteie, M., Hetherington, J., Behringer, P. A., Kapur, T., Wells, W. M., ... & Abolmaesumi, P. (2017, March). DeepInfer: open-source deep learning deployment toolkit for image-guided therapy. In SPIE Medical Imaging (pp. 101351K-101351K). International Society for Optics and Photonics.
